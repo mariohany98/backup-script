@@ -4,13 +4,13 @@ This is a simple shell script for creating backups of specified files and direct
 
 # Usage
 
-1-Ensure that you have the necessary permissions to create directories and write to the backup location.
+1-Ensure that you have the superuser privileges to create directories and write to the backup location.
 
 2-Modify the script to specify the files and directories you want to back up by setting the "backup_files" variable. You can add or remove files and directories as needed.
 
 3-Run the script by executing it in your terminal
 
-    ./backup.sh
+   sudo ./backup.sh
 
 # Important note
 
