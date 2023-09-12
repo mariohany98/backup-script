@@ -7,6 +7,20 @@ print_green(){
 	echo  "${GREEN} $1 ${NC}"
 }
 
+# Print-red function
+print_red(){
+	RED="\033[0;31m"
+	NC="\033[0m"
+	echo  "${RED} $1 ${NC}"
+}
+
+# Check for root/superuser privileges
+if [ "$(id -u)" -ne 0 ]
+then
+	print_red "This script requires superuser privileges. Please run it as root or with sudo."
+	exit
+fi
+
 # Create the directory where backups will be stored
 if [ -d /backup ]
 then
