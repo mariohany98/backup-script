@@ -10,7 +10,7 @@ This is a simple shell script for creating backups of specified files and direct
 
 3-Run the script by executing it in your terminal
 
-   sudo ./backup.sh
+      sudo ./backup.sh
 
 # Important note
 
